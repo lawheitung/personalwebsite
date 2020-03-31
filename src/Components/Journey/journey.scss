@@ -1,0 +1,48 @@
+@import '../../index.scss';
+
+.journey{
+    img{
+        object-fit: cover;
+        width:240px;
+        height:190px;  
+        border-radius: 1rem;
+        min-height: 13rem;
+    }
+    margin: 3rem 0rem;
+
+}
+
+@media screen and (min-width:768px){
+    .journey{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-column-gap: 0.5rem;
+    }
+}
+
+.img-container{
+    position: relative;
+}
+
+.journey-info{
+    padding: 1rem 2rem;
+    h2{
+        text-transform: uppercase;
+        color: $mainGreen;
+        font-family: $company;
+        font-size: large;
+
+    }
+    p{
+        color: $mainDarkGrey;
+        font-family: $content;
+        font-size: medium;;
+    }
+    h4{
+        color: $mainBlue;
+        padding: 0.2rem 0rem 1.5rem 0rem;
+        font-family: $title;
+        font-size: medium;
+    }
+}
+

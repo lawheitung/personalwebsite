@@ -1,0 +1,78 @@
+@import '../../index.scss';
+
+.fencinglist{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 1rem 2rem;
+}
+
+.content{
+  padding: 1rem 2rem;
+    h2{
+        text-transform: uppercase;
+        color: $mainGreen;
+        font-family: $company;
+        display:grid;
+        grid-template-columns: 1;
+
+    }
+    p{
+        color: $mainDarkGrey;
+        font-family: $content;
+        text-align: center;
+        font-size: large;
+
+        padding: 0 20rem 1rem 20rem;
+    }
+    h4{
+        color: $mainBlue;
+        padding: 0.2rem 0rem 1.5rem 0rem;
+        font-family: $title;
+    }
+}
+
+.backgroundColor3{
+    background: $mainWhite;
+    padding: 2rem;
+}
+
+
+
+.sectionHeader3 {
+	font-family: $title;
+	font-size: xx-large;
+	text-align: center;
+	color: $mainBlack;
+	margin-bottom: 30px;
+}
+
+.sectionHeader3 .header3 {
+	font-size: xx-large;
+}
+
+span.header3 {
+	font-family: $title;
+	font-size: xx-large;
+	background-color:$mainWhite;
+	position: relative;
+	z-index: 50;
+	padding: 0 9px 0 9px;
+}
+
+.header3 img {
+	opacity: .45;
+}
+
+.header3.ver3::before {
+  content: " ";
+  display:block;
+  position:absolute;
+  width:30em;
+  left:50%;
+  top:50%;
+  -webkit-transform: translateX(-50%);
+  z-index: -1;
+  margin-top:0;
+  border-top: 3px solid $mainBlack;
+}

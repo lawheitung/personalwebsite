@@ -1,0 +1,22 @@
+
+@import "~bootstrap/scss/bootstrap";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$mainBlack: #222;
+$mainBlue: rgb(14, 101, 201);
+$mainWhite: #fff;
+$mainGrey: #E9EBEE;
+$mainDarkGrey: #616771;
+$mainGreen: #14A5EE;
+$title: 'Bitter', serif;
+$content: 'Alegreya Sans', sans-serif;
+$company: 'Cinzel', serif;
+
+body {
+  background: $mainWhite;
+  color: $mainBlack;
+}

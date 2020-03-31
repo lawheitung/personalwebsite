@@ -1,0 +1,57 @@
+@import '../../index.scss';
+
+.qualitylist{
+    width: 70vw;
+    max-width: 1170px;
+    margin: 0 auto;
+    
+    padding: 1rem 2rem;
+
+
+}
+
+.backgroundColor2{
+    background: $mainWhite;
+    padding: 2rem;
+}
+
+.sectionHeader2 {
+	font-family: $title;
+	font-size: xx-large;
+	text-align: center;
+	color: $mainBlack;
+	margin-bottom: 30px;
+}
+
+.sectionHeader2 .header2 {
+	font-size: xx-large;
+}
+
+span.header2 {
+	font-family: $title;
+	font-size: xx-large;
+	background-color:$mainWhite;
+	position: relative;
+	z-index: 50;
+	padding: 0 9px 0 9px;
+}
+
+.header2 img {
+	opacity: .45;
+}
+
+
+
+
+.header2.ver1::before {
+  content: " ";
+  display:block;
+  position:absolute;
+  width:30em;
+  left:50%;
+  top:50%;
+  -webkit-transform: translateX(-50%);
+  z-index: -1;
+  margin-top:0;
+  border-top: 3px solid $mainBlack;
+}

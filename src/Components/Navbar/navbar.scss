@@ -1,0 +1,43 @@
+@import '../../index.scss';
+
+.navbar{
+    background: $mainBlue;
+    // padding:1rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+.nav-links{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    text-align: center;
+}
+
+.nav-link{
+    color: $mainGrey;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: medium;
+    font-family: $title;
+    text-transform: uppercase;
+    transition: all 0.3s linear;
+    &:hover{
+        color:$mainBlue;
+    }
+    align-items: center;
+    text-align: center;
+}
+
+.active{
+    color:$mainWhite;
+}
+
+
+.li{
+    padding:0;
+}
+
+.a{
+}
