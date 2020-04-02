@@ -18,7 +18,7 @@ export default class QualityList extends Component {
                 <div className="qualitylist">
                     <div class="sectionHeader2">
                         <span class="header2 ver1">
-                            <strong>Inside my heart</strong>
+                            <strong>My game plan</strong>
                         </span>
 		            </div>
                 </div>

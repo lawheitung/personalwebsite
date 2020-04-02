@@ -22,5 +22,7 @@
     transition: all 0.3s linear;
     &:hover{
         color:$mainGreen;
+        text-decoration: none;
+        transform: translateY(-4px);
     }
 }

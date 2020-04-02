@@ -1,43 +1,96 @@
-@import '../../index.scss';
+@import "../../index.scss";
 
-.navbar{
-    background: $mainBlue;
-    // padding:1rem 1rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-}
 
-.nav-links{
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(3, 0.5fr);
-    text-align: center;
-}
-
-.nav-link{
-    color: $mainGrey;
-    text-transform: capitalize;
+.btn-primary {
+    display: inline-block;
     text-decoration: none;
-    font-size: medium;
-    font-family: $title;
+    letter-spacing: var(--mainSpacing);
+    color: var(--mainBlack);
+    background: var(--primaryColor);
+    padding: 0.4rem 0.9rem;
+    border: 3px solid var(--primaryColor);
+    transition: var(--mainTransition);
     text-transform: uppercase;
+    cursor: pointer;
+  }
+  .btn-primary:hover {
+    background: transparent;
+  }
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.75rem 2rem;
+    background: $mainWhite;
+    z-index: 1;
+  }
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  .nav-links {
+    height: 0;
+    overflow: hidden;
     transition: all 0.3s linear;
-    &:hover{
-        color:$mainBlue;
-    }
-    align-items: center;
-    text-align: center;
-}
+    list-style-type: none;
+    justify-content: center;
+    display: inline-block;
+  }
 
-.active{
+  .active-nav-link{
     color:$mainWhite;
-}
+    border-bottom: 3px solid $mainBlue;
+    transition: border-bottom .5s ease-in-out;
+  }
 
+  .nav li{
+    float: left;
+  }
+  
+  .nav-links a {
+    display: block;
+    text-decoration: none;
+    padding: 1rem 0;
+    color: $mainDarkGrey;
+    transition: all 0.3s linear;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    &:hover{
+        color: $mainGreen;
+         text-decoration: none;
+    }
+  }
+  
+  .show-nav {
+    height: 100px;
+  }
+  
 
-.li{
-    padding:0;
-}
-
-.a{
-}
+  @media screen and (min-width: 768px) {
+    .nav-btn {
+      display: none;
+    }
+    .nav-center {
+      max-width: 1170px;
+      margin: 0 auto;
+      display: flex;
+    }
+    .nav-links {
+      height: auto;
+      display: flex;
+      margin-left: 4rem;
+    }
+    .nav-links a {
+      margin: 0 1rem;
+      padding: 0.5rem 0;
+    }
+  }
