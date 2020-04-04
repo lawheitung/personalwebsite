@@ -18,12 +18,16 @@
   }
 .navbar {
     position: fixed;
+    max-height: 10vh;
     top: 0;
     left: 0;
     width: 100%;
     padding: 0.75rem 2rem;
     background: $mainWhite;
     z-index: 1;
+    position:sticky;
+    position:-webkit-sticky;
+    top:0
   }
   .nav-header {
     display: flex;

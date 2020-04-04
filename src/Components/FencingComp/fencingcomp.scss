@@ -3,7 +3,6 @@
 .fencingcomp{
     img{
         object-fit: cover;
-        min-height: 13rem;
         width:350px;
         height:190px;  
     }
@@ -29,12 +28,12 @@
 
 .fencingcomp-info{
     padding: 1rem 2rem;
-    h2{
-        text-transform: uppercase;
-        color: $mainGreen;
-        font-family: $company;
+    // h2{
+    //     text-transform: uppercase;
+    //     color: $mainGreen;
+    //     font-family: $company;
 
-    }
+    // }
     p{
         color: $mainDarkGrey;
         font-family: $content;

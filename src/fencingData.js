@@ -15,7 +15,7 @@ export const fencingData = [
 
     {
         id: 3,
-        title : "Aspiration",
+        title : "Giving back",
         img: "./img/fencing4.jpeg",
         description: "Continuing the journey in the community by inspiring the next generation"
     },

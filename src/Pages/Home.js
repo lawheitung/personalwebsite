@@ -8,7 +8,7 @@ import Contact from '../Components/Contact/Contact'
 export default function Home(){
     return (
       <React.Fragment>
-        <Hero/>
+        <Hero max="true"/>
         <JourneyList/>
         <FencingList/>
         <QualityList/>

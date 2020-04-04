@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
+import ProjectList from '../Components/ProjectList/ProjectList';
+import Contact from '../Components/Contact/Contact'
 
-export default class Projects extends Component {
-    render() {
-        return (
-            <div>
-                <h1>Great</h1>
-            </div>
-        )
-    }
-}
+export default function Project(){
+    return (
+      <React.Fragment>
+        <ProjectList/>
+        <Contact/>
+      </React.Fragment>
+    );
+  }

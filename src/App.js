@@ -10,7 +10,7 @@ import FencingList from './Components/FencingList/FencingList'
 import Home from './Pages/Home';
 
 import Projects from './Pages/Projects'
-import Resume from './Pages/Resume'
+
 
 import {Route, Switch} from 'react-router-dom';
 
@@ -21,7 +21,6 @@ export default function App() {
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route exact path="/projects/" component={Projects}/>
-        <Route exact path="/resume/" component={Resume}/>
       </Switch>
     </div>
   )

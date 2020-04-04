@@ -3,7 +3,7 @@ import './navbar.scss'
 import {NavLink} from 'react-router-dom'
 import logo from '../../logo.svg'
 import {FaAlignRight} from 'react-icons/fa'
-// import Rxjs from 'rxjs';
+import styled from 'styled-components'
 
 export default class Navbar extends Component {
     state = {
@@ -13,30 +13,9 @@ export default class Navbar extends Component {
       this.setState({ isOpen: !this.state.isOpen });
     };
 
-    // constructor (props){
-    //   super(props);
-
-    //   this.state={
-    //     isMin: false,
-    //   }
-
-    // }
-
-    // componentDidMount(){
-    //   Rxjs.Observable.fromEvent(window, 'scroll')
-    //   .subscribe(e => {
-    //     if(window.scrollY>60){
-    //       this.setState ({ isMin: true});
-    //     } else {
-    //       this.setState({ isMin: false });
-    //     }
-    //   });
-    // }
-
-
-
     render() {
       return (
+      <NavWrapper>
         <div className="navbar">
         <nav className="navbar">
           <div className="nav-center">
@@ -58,60 +37,19 @@ export default class Navbar extends Component {
               <li>
                 <NavLink exact to="/projects" className="nav-link" activeClassName="active-nav-link">Projects</NavLink>
               </li>
-              <li>
-                <NavLink exact to="/resume" className="nav-link" activeClassName="active-nav-link">Resume</NavLink>
-              </li>
             </ul>
           </div>
         </nav>
         </div>
+      </NavWrapper>
+        
       );
     }
   }
 
-// export default class Navbar extends Component {
-//     render() {
-//         state = {
-//             isOpen:false
-//         }
-//         handleToggle = () => {
-//             this.setState({toggle:!this.state.toggle})
-//         }
-//         return (
-//             <nav className="navbar">
-//                 <div className="nav-center">
-//                     <Link to ="/">
-//                         <img src={logo} alt="Beach Resort"></img>
-//                     </Link>
-//                 </div>
-//             </nav>
-//         )
-//     }
-// }
-
-
-// export default function Navbar() {
-//     return (
-//        <nav className="navbar">
-//         <ul className="nav-links">
-//             <li>
-//                 <a href="/" className="nav-link active">
-//                     Home
-//                 </a>
-//             </li>
-//             <li>
-//                 <a href="/Projects" className="nav-link">
-//                     Projects
-//                 </a>
-//             </li>
-//             <li>
-//                 <a href="/Resume" className="nav-link">
-//                     Resume
-//                 </a>
-//             </li>
-//         </ul>
-//        </nav>
-//     )
-// }
-
-//       <img src= {logo} alt="TiffanyLaw" />
+  const NavWrapper = styled.nav`
+  position:sticky;
+  position:-webkit-sticky;
+  top:0;
+  z-index:999;
+  `
