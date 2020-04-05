@@ -40,7 +40,10 @@ export default class Contact extends Component {
                     <a href="mailto:webmaster@example.com" className="email social" size="2x">
                         <FaEnvelope/>
                     </a>
-                </div>      
+                </div>   
+                <div className="copyright">
+                    <p> &#169; Tiffany Law 2019</p>
+                </div>   
                 </row>
             </footer>
         )

@@ -8,7 +8,7 @@ export default class Qualities extends Component {
         return (
             <session className="quality-info">
                 <div className="quality-links">
-                    <a className='quality-link' href = {link}>{quote}</a>
+                    <a className='quality-link' href = {link} target="_blank">{quote}</a>
                 </div>
             </session>
         )

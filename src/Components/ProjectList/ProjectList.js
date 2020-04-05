@@ -1,25 +1,28 @@
 import React, { Component } from 'react'
 import './projectlist.scss'
-import Project from '../Project/Project'
-//import {projectData} from '../../projectData'
+import Project from '../Projectdetails/Projectdetails'
+import {projectData} from '../../projectData'
 
 export default class Projectlist extends Component {
-     
+        state = {
+            projects: projectData
+        };
     render() {
         // console.log(this.state.journeys)
+        const { projects } = this.state;
         return (
-            <div className="backgroundColor">
+            <div className="backgroundColor1">
                 <section className="projectlist">
-                <div class="sectionHeader2">
-                    <span class="header2 ver1">
+                <div class="sectionHeader">
+                    <span class="header ver2">
                         <strong>What I have created</strong>
                     </span>
 		        </div>
                     {
-                        // journeys.map(journey => (<Journey key= { journey.id } journey = { journey } />))
+                        projects.map(project => (<Project key= { project.id } project = { project } />))
                     }
                 
-            </section>
+                </section>
             </div>
             
         )

@@ -1,0 +1,54 @@
+@import '../../index.scss';
+
+.projectdetails{
+    img{
+        object-fit: cover;
+        width:240px;
+        height:190px;  
+        border-radius: 1rem;
+        min-height: 8rem;
+    }
+    margin: 3rem 0rem;
+
+}
+
+@media screen and (min-width:768px){
+    .projectdetails{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-column-gap: 0.5rem;
+    }
+}
+
+.img-container{
+    position: relative;
+}
+
+.projectdetails-info{
+    padding: 1rem 2rem;
+    h2{
+        text-transform: uppercase;
+        color: $mainGreen;
+        font-family: $company;
+        font-size: x-large;
+        font-weight: 1000;
+
+    }
+    p{
+        color: $mainDarkGrey;
+        font-family: $content;
+        font-size: medium;
+    }
+    h4{
+        color: $mainBlue;
+        padding: 0.2rem 0rem 1.5rem 0rem;
+        font-family: $title;
+        font-size: medium;
+    }
+    h1{
+        color: $mainDarkGrey;
+        font-family: $content;
+        font-size: large;
+    }
+}
+
