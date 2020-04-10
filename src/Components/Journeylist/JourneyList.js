@@ -10,6 +10,7 @@ export default class Journeylist extends Component {
 
     
      
+    
     render() {
         // console.log(this.state.journeys)
         const { journeys } = this.state;

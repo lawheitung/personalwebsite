@@ -11,7 +11,7 @@ export const qualityData = [
     },
     {
         id:3,
-        quote:"Do it quick, fail, do it another way",
+        quote:"Shoot more of your shots",
         link:"https://www.forbes.com/sites/donyaeger/2020/01/27/keep-shooting-your-shot-a-kobe-bryant-memory-and-a-lesson-in-greatness/#7a6cb6384458"
     },
     {
